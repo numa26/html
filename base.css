@@ -1,0 +1,200 @@
+@charset "utf-8"; 
+/*============================
+全般的なスタイル
+============================*/
+* {
+  margin:0; padding:0;
+}
+
+body {
+    background-color:#cccccc;
+    background-image:url("images/bg_body.png");
+    font-size:95%;
+    font-family:sans-serif;
+    line-height:1.6;
+    color:#333333;
+}
+
+div#pagebody {
+    width:1000px; margin:0 auto;
+    background-color:#ffffff;
+    background-image:url("images/bg_pagebody.png");
+    background-repeat:repeat-y;
+}
+
+/*============================
+ヘッダ部
+============================*/
+div#header {
+    height: 80px;
+}
+
+div#header h1 {
+    padding:10px 0px 5px 20px;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#header h1 a {
+    text-decoration:none;
+}
+img {
+    border: 0;
+}
+
+/*============================
+ヘッダ画像
+============================*/
+div#img_index {
+   width:960px; height:360px;
+   margin:5px 20px;
+}
+
+#img_subpage {
+    width: 960px; height: 240px;
+    margin:5px 20px;
+}
+
+/*============================
+メインメニュー
+============================*/
+
+ul#menu {
+    width:960px; height:50px;
+    margin:0px 20px;
+}
+
+#menu li {
+    list-style-type:none;
+    display:inline;
+    float:left;    /*リスト方向を横に並べる*/
+}
+
+#menu li a {
+    display:block;
+    width:240px; height:35px;
+    background-color:navy;
+    color:#ffffff;
+    padding:15px 0px 0px 0px;
+    text-align:center;
+    text-decoration:none;
+    background-image:url(images/bg_menu1.png);
+    background-repeat:no-repeat;
+}
+
+#menu li a:hover {
+    background-color:#000066;
+    background-image:url(images/bg_menu2.png);
+}
+
+/*============================
+サブメニュー(左カラム)
+============================*/
+h2 {
+    width:160px; height:43px;
+    padding:17px 0px 0px 100px;
+    font-size:16px;
+    background-image:url(images/bg_h2.png);
+    background-repeat:no-repeat;
+    background-color:#000033;    /*背景色*/
+    color:#ffffff;
+}
+
+div#submenu {
+    widows: 260px;
+    margin: 10px 10px 10px 25px;
+    float: left;
+}
+
+div#submenu ul li {
+    list-style-type:none;
+}
+
+div#submenu ul li a {
+    display:block;
+    height: 45px;
+    padding: 15px 0px 0px 30px;
+    text-decoration: none;
+    border-bottom: 1px dotted gray;
+    background-image:url(images/bg_submenu.png);
+    background-repeat: no-repeat;
+    color: #333333;
+}
+
+div#submenu ul li:first-child a {
+    border-top:1px dotted  gray;    /*一番上のリンクのみ上線を表示*/
+}
+
+div#submenu ul li a:hover {
+    text-decoration:underline;   /*マウスが乗ったら下線を表示*/
+}
+
+div#submenu ul li a:before {
+    content: url(images/icon_submenu.png);
+    margin: 0px 10px 0px 0px;
+    vertical-align: text-top;
+}
+/*============================
+インフォメーション(右カラム)
+============================*/
+div#info {
+    width: 660px;
+    float: left;
+    padding:10px 20px 0px 0px;
+}
+h3 {
+    font-size:14px;
+    width:660px;
+    padding:10px 0px 10px 20px;
+    background-color:#003399;
+    color:#ffffff;
+    border-radius:3px;
+    -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; -ms-border-radius:3px;
+    }
+
+.infoimg_index {
+    width:200px; height: 150px;
+    margin:0px 0px 20px 20px;
+    float: right;
+}
+
+.infoimg_subpage {
+    width: 400px; height:300px;
+    margin: 0px 20px 20px 0px;
+    float: left;
+}
+
+/*============================
+備考情報
+============================*/
+div.remarks {
+    margin:0px 10px 10px 10px;
+}
+
+h4 {
+    color:#000066;
+}
+
+hr {
+    clear:both;
+    width: 680px;
+    margin: 10px 0px;
+    border: 1px dotted #cccccc;
+}
+
+p {
+    width: 660px;
+    margin: 10px;
+    text-indent: 1em;
+}
+
+/*============================
+フッター
+============================*/
+div#footer {
+    clear: both;
+    height: 40px;
+    padding:10px 0px 0px 0px;
+    font-size:x-small;
+    text-align: center;
+}
